@@ -6,23 +6,24 @@
 <title>見た人をファンにする ショート動画 プロフィール＆導線テンプレート集</title>
 <style>
 :root{
-  --paper:#F7F5EF;
-  --column:#FCFBF7;
+  --paper:#F7F6F3;
+  --column:#FCFBF9;
   --card:#FFFFFF;
-  --line:#E5E1D8;
-  --line2:#D2CCBF;
-  --ink:#1A1A1A;
-  --ink2:#57544E;
-  --ink3:#6E6A62;
-  --navy-deep:#134A8E;
-  --navy-vivid:#2E74D0;
-  --navy-text:#175394;
-  --navy-soft:#E7EFFB;
-  --navy-bright:#AECCF2;
-  --gold-vivid:#B4924F;
-  --gold-text:#7C5E2B;
-  --gold-soft:#F3ECDD;
-  --gold-bright:#D8BE86;
+  --line:#E4E2DC;
+  --line2:#CDCDC3;
+  --ink:#1A1D1E;
+  --ink2:#545A5A;
+  --ink3:#6B7170;
+  --teal-deep:#0E3B38;
+  --teal-vivid:#178A80;
+  --teal-text:#106257;
+  --teal-soft:#E3F2F0;
+  --teal-bright:#8CCFC6;
+  --coral-deep:#79300F;
+  --coral-vivid:#E2603A;
+  --coral-text:#AC4423;
+  --coral-soft:#FCEDE6;
+  --coral-bright:#F3A98D;
   --sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium",Meiryo,system-ui,sans-serif;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -30,13 +31,13 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:15px;line-height:1.95;letter-spacing:.02em;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;word-break:keep-all;overflow-wrap:break-word;font-feature-settings:"palt" 1}
 svg{max-width:100%;height:auto;display:block}
 .page{max-width:452px;margin:0 auto;background:var(--column);overflow:hidden}
-.progress{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,var(--navy-vivid),var(--gold-vivid));z-index:50;transition:width .12s linear}
+.progress{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,var(--teal-vivid),var(--coral-vivid));z-index:50;transition:width .12s linear}
 .block{padding:60px 30px}
 .divider{height:1px;background:var(--line);margin:0 30px}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:600;letter-spacing:.22em;color:var(--gold-text);margin:0 0 18px}
-.eyebrow::before{content:"";width:22px;height:1px;background:var(--gold-text);opacity:.8}
-.dark .eyebrow{color:var(--gold-bright)}
-.dark .eyebrow::before{background:var(--gold-bright)}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:600;letter-spacing:.22em;color:var(--coral-text);margin:0 0 18px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--coral-text);opacity:.8}
+.dark .eyebrow{color:var(--coral-bright)}
+.dark .eyebrow::before{background:var(--coral-bright)}
 h1,h2,h3{margin:0;font-weight:600;letter-spacing:.01em;font-feature-settings:"palt" 1}
 .h1{font-size:29px;line-height:1.44;color:var(--card)}
 .h2{font-size:22px;line-height:1.5;color:var(--ink)}
@@ -46,7 +47,7 @@ p{margin:0}
 .lead{font-size:15px;color:var(--ink2);line-height:1.95}
 .dark .lead{color:var(--card);opacity:.92}
 .fine{font-size:12.5px;color:var(--ink2);line-height:1.85;letter-spacing:.03em}
-.dark .fine{color:var(--gold-bright);opacity:.9}
+.dark .fine{color:var(--coral-bright);opacity:.9}
 .num{font-weight:600;white-space:nowrap}
 .nowrap{white-space:nowrap}
 strong{font-weight:600;color:var(--ink)}
@@ -59,43 +60,43 @@ strong{font-weight:600;color:var(--ink)}
 figure{margin:26px 0 0}
 section>figure:first-of-type{margin-top:26px}
 figcaption{margin-top:12px;font-size:12.5px;color:var(--ink2);text-align:center;line-height:1.7}
-.dark figcaption{color:var(--gold-bright);opacity:.9}
+.dark figcaption{color:var(--coral-bright);opacity:.9}
 svg text{font-family:var(--sans)}
-.block.dark{background:var(--navy-deep)}
+.block.dark{background:var(--teal-deep)}
 
 /* cover / gate / outro（暗地・3箇所のみ） */
-.cover{background:var(--navy-deep);padding:52px 30px 48px;position:relative}
-.badge{display:inline-flex;align-items:center;font-size:12.5px;font-weight:600;letter-spacing:.06em;padding:6px 14px;border-radius:20px;background:rgba(255,255,255,.1);color:var(--gold-bright);border:1px solid rgba(216,190,134,.35)}
+.cover{background:var(--teal-deep);padding:52px 30px 48px;position:relative}
+.badge{display:inline-flex;align-items:center;font-size:12.5px;font-weight:600;letter-spacing:.06em;padding:6px 14px;border-radius:20px;background:rgba(255,255,255,.1);color:var(--coral-bright);border:1px solid rgba(243,169,141,.35)}
 .cover-h1{margin-top:18px}
-.cover-sub{margin-top:14px;font-size:17px;font-weight:600;line-height:1.7;color:var(--gold-bright)}
+.cover-sub{margin-top:14px;font-size:17px;font-weight:600;line-height:1.7;color:var(--coral-bright)}
 .cover-lead{margin-top:24px;display:flex;flex-direction:column;gap:12px}
 .cover-lead-item{display:flex;gap:10px;align-items:flex-start}
-.cover-lead-mark{flex:0 0 20px;width:20px;height:20px;border-radius:50%;background:var(--navy-vivid);border:1px solid rgba(216,190,134,.5);display:flex;align-items:center;justify-content:center;margin-top:2px}
+.cover-lead-mark{flex:0 0 20px;width:20px;height:20px;border-radius:50%;background:var(--teal-vivid);border:1px solid rgba(243,169,141,.5);display:flex;align-items:center;justify-content:center;margin-top:2px}
 .cover-lead-text{font-size:14px;line-height:1.75;color:var(--card)}
 .cover-meta{margin-top:26px;display:flex;flex-direction:column;gap:8px}
 .cover-meta-row{display:flex;gap:10px;padding:11px 13px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
-.cover-meta-k{flex:0 0 76px;font-size:12px;color:var(--gold-bright);opacity:.85;letter-spacing:.04em;padding-top:1px}
+.cover-meta-k{flex:0 0 76px;font-size:12px;color:var(--coral-bright);opacity:.85;letter-spacing:.04em;padding-top:1px}
 .cover-meta-v{font-size:13.5px;color:var(--card);line-height:1.6}
 .cover-art{margin-top:28px}
 
 .gate{padding:60px 30px}
-.outro{background:var(--navy-deep);padding:60px 30px 0}
-.foot-divider{margin-top:30px;height:1px;background:var(--gold-bright);opacity:.22}
+.outro{background:var(--teal-deep);padding:60px 30px 0}
+.foot-divider{margin-top:30px;height:1px;background:var(--coral-bright);opacity:.22}
 .foot{padding:22px 0 40px}
-.foot p{font-size:12.5px;color:var(--gold-bright);opacity:.8;line-height:1.9;letter-spacing:.03em}
+.foot p{font-size:12.5px;color:var(--coral-bright);opacity:.8;line-height:1.9;letter-spacing:.03em}
 
 /* prompt（コピペ素材） */
 .prompt-figure{margin-top:26px}
 .prompt-frame{border-radius:10px 10px 0 0;overflow:hidden}
-.prompt-label{padding:12px 16px 0;font-size:12.5px;font-weight:600;color:var(--gold-text);letter-spacing:.06em;background:var(--gold-soft);margin:0}
-.prompt-body{margin:0;padding:14px 16px 16px;background:var(--gold-soft);font-size:13px;line-height:1.9;color:var(--ink2);white-space:pre-wrap;font-family:var(--sans);border-left:3px solid var(--gold-vivid);border-radius:0 0 8px 8px}
+.prompt-label{padding:12px 16px 0;font-size:12.5px;font-weight:600;color:var(--coral-text);letter-spacing:.06em;background:var(--coral-soft);margin:0}
+.prompt-body{margin:0;padding:14px 16px 16px;background:var(--coral-soft);font-size:13px;line-height:1.9;color:var(--ink2);white-space:pre-wrap;font-family:var(--sans);border-left:3px solid var(--coral-vivid);border-radius:0 0 8px 8px}
 
 /* howto（プロンプトの使い方カード） */
-.howto{margin-top:22px;padding:16px 17px;border-radius:10px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold-vivid)}
+.howto{margin-top:22px;padding:16px 17px;border-radius:10px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--coral-vivid)}
 .howto-steps{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
 .howto-steps li{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--ink);line-height:1.8}
 .howto-steps li>span:last-child{flex:1;min-width:0}
-.howto-n{flex:0 0 20px;width:20px;height:20px;border-radius:50%;background:var(--gold-soft);border:1px solid var(--gold-vivid);color:var(--gold-text);font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.howto-n{flex:0 0 20px;width:20px;height:20px;border-radius:50%;background:var(--coral-deep);border:1px solid var(--coral-deep);color:var(--card);font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:3px}
 
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -124,14 +125,14 @@ svg text{font-family:var(--sans)}
       <title id="fig1-title">暗地の上に、左の縦長の入口の枠から右の人の丸まで、プロフ・固定・フォローの3つの点を通る1本の線が伸びる図</title>
       <rect x="20" y="56" width="58" height="96" rx="10" fill="none" stroke="var(--card)" stroke-opacity=".3" stroke-width="2"/>
       <text x="49" y="176" text-anchor="middle" font-size="13" fill="var(--card)" opacity=".75">入口</text>
-      <path d="M78,104 L140,82 L190,120 L240,86 L278,104" fill="none" stroke="var(--gold-vivid)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="140" cy="82" r="4" fill="var(--gold-vivid)"/>
-      <text x="140" y="66" text-anchor="middle" font-size="13" fill="var(--gold-bright)">プロフ</text>
-      <circle cx="190" cy="120" r="4" fill="var(--gold-vivid)"/>
-      <text x="190" y="140" text-anchor="middle" font-size="13" fill="var(--gold-bright)">固定</text>
-      <circle cx="240" cy="86" r="4" fill="var(--gold-vivid)"/>
-      <text x="240" y="68" text-anchor="middle" font-size="13" fill="var(--gold-bright)">フォロー</text>
-      <circle cx="300" cy="104" r="22" fill="var(--navy-vivid)" stroke="var(--card)" stroke-opacity=".5" stroke-width="1.5"/>
+      <path d="M78,104 L140,82 L190,120 L240,86 L278,104" fill="none" stroke="var(--coral-vivid)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1,9"/>
+      <circle cx="140" cy="82" r="4" fill="var(--coral-vivid)"/>
+      <text x="140" y="66" text-anchor="middle" font-size="13" fill="var(--coral-bright)">プロフ</text>
+      <circle cx="190" cy="120" r="4" fill="var(--coral-vivid)"/>
+      <text x="190" y="140" text-anchor="middle" font-size="13" fill="var(--coral-bright)">固定</text>
+      <circle cx="240" cy="86" r="4" fill="var(--coral-vivid)"/>
+      <text x="240" y="68" text-anchor="middle" font-size="13" fill="var(--coral-bright)">フォロー</text>
+      <circle cx="300" cy="104" r="22" fill="var(--teal-vivid)" stroke="var(--card)" stroke-opacity=".5" stroke-width="1.5"/>
       <text x="300" y="188" text-anchor="middle" font-size="13" fill="var(--card)" opacity=".75">ファン</text>
     </svg>
     <figcaption>入口から、<wbr>ファンへの<wbr>一本道。</figcaption>
@@ -150,11 +151,11 @@ svg text{font-family:var(--sans)}
       <rect x="52" y="66" width="34" height="80" rx="6" fill="var(--line)" stroke="var(--line2)" stroke-width="1.5"/>
       <line x1="69" y1="146" x2="69" y2="160" stroke="var(--ink3)" stroke-width="2" stroke-linecap="round"/>
       <circle cx="69" cy="160" r="3" fill="var(--ink3)"/>
-      <rect x="180" y="16" width="130" height="158" rx="10" fill="var(--card)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
+      <rect x="180" y="16" width="130" height="158" rx="10" fill="var(--card)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
       <text x="192" y="40" font-size="13" fill="var(--ink2)">導線あり</text>
       <rect x="212" y="66" width="34" height="60" rx="6" fill="var(--line)" stroke="var(--line2)" stroke-width="1.5"/>
-      <path d="M229,126 C229,146 260,150 276,146" fill="none" stroke="var(--gold-vivid)" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="278" cy="144" r="9" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
+      <path d="M229,126 C229,146 260,150 276,146" fill="none" stroke="var(--coral-vivid)" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="278" cy="144" r="9" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
     </svg>
     <figcaption>入口の先に、<wbr>道を作る。</figcaption>
   </figure>
@@ -163,11 +164,11 @@ svg text{font-family:var(--sans)}
     <svg viewBox="0 0 330 150" role="img" aria-labelledby="fig3-title">
       <title id="fig3-title">大きな再生数の下に、フォローの矢印が0本しかない無風の図。強調色の×印が添えてある</title>
       <text x="24" y="42" font-size="15" font-weight="600" fill="var(--ink)">再生数 とても多い</text>
-      <rect x="24" y="58" width="282" height="34" rx="6" fill="var(--navy-soft)"/>
-      <rect x="24" y="58" width="282" height="34" rx="6" fill="var(--navy-vivid)" opacity=".9"/>
+      <rect x="24" y="58" width="282" height="34" rx="6" fill="var(--teal-soft)"/>
+      <rect x="24" y="58" width="282" height="34" rx="6" fill="var(--teal-vivid)" opacity=".9"/>
       <text x="24" y="120" font-size="13" fill="var(--ink3)">フォロー 0本</text>
-      <line x1="150" y1="106" x2="176" y2="132" stroke="var(--gold-vivid)" stroke-width="3" stroke-linecap="round"/>
-      <line x1="176" y1="106" x2="150" y2="132" stroke="var(--gold-vivid)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="150" y1="106" x2="176" y2="132" stroke="var(--coral-vivid)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="176" y1="106" x2="150" y2="132" stroke="var(--coral-vivid)" stroke-width="3" stroke-linecap="round"/>
     </svg>
     <figcaption>見られて<wbr>終わり、<wbr>を<wbr>防ぐ。</figcaption>
   </figure>
@@ -182,15 +183,15 @@ svg text{font-family:var(--sans)}
   <figure>
     <svg viewBox="0 0 330 380" role="img" aria-labelledby="fig4-title">
       <title id="fig4-title">縦に5つの段が矢印でつながる図。動画で目を止める、プロフィールへ案内する、プロフと固定で信頼を渡す、フォローしてもらう、返して関係を深めるの順。1段目と2段目の間に強調色の×印がある</title>
-      <rect x="24" y="10" width="282" height="48" rx="8" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="2"/>
-      <text x="38" y="39" font-size="13" font-weight="600" fill="var(--gold-text)">①動画で、目を止める</text>
-      <line x1="230" y1="34" x2="248" y2="34" stroke="var(--gold-vivid)" stroke-width="3" stroke-linecap="round"/>
-      <line x1="242" y1="28" x2="248" y2="34" stroke="var(--gold-vivid)" stroke-width="3" stroke-linecap="round"/>
-      <line x1="242" y1="40" x2="248" y2="34" stroke="var(--gold-vivid)" stroke-width="3" stroke-linecap="round"/>
-      <line x1="150" y1="58" x2="150" y2="72" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M143,64 L150,76 L157,64 Z" fill="var(--gold-vivid)"/>
-      <line x1="138" y1="60" x2="162" y2="82" stroke="var(--gold-vivid)" stroke-width="2.5" stroke-linecap="round"/>
-      <line x1="162" y1="60" x2="138" y2="82" stroke="var(--gold-vivid)" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="24" y="10" width="282" height="48" rx="8" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="2"/>
+      <text x="38" y="39" font-size="13" font-weight="600" fill="var(--coral-text)">①動画で、目を止める</text>
+      <line x1="230" y1="34" x2="248" y2="34" stroke="var(--coral-vivid)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="242" y1="28" x2="248" y2="34" stroke="var(--coral-vivid)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="242" y1="40" x2="248" y2="34" stroke="var(--coral-vivid)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="150" y1="58" x2="150" y2="72" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M143,64 L150,76 L157,64 Z" fill="var(--coral-vivid)"/>
+      <line x1="138" y1="60" x2="162" y2="82" stroke="var(--coral-vivid)" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="162" y1="60" x2="138" y2="82" stroke="var(--coral-vivid)" stroke-width="2.5" stroke-linecap="round"/>
       <rect x="24" y="88" width="282" height="48" rx="8" fill="var(--card)" stroke="var(--line2)" stroke-width="1.5"/>
       <text x="38" y="117" font-size="13" font-weight="600" fill="var(--ink)">②プロフへ案内する</text>
       <line x1="165" y1="136" x2="165" y2="152" stroke="var(--ink3)" stroke-width="2" stroke-linecap="round"/>
@@ -212,16 +213,16 @@ svg text{font-family:var(--sans)}
   <figure>
     <svg viewBox="0 0 330 170" role="img" aria-labelledby="fig5-title">
       <title id="fig5-title">段の途中で丸が減っていく図。各段で人数が少しずつ減り、途中に抜け止めの帯が1本置かれている</title>
-      <circle cx="34" cy="40" r="14" fill="var(--navy-vivid)"/>
-      <circle cx="94" cy="40" r="12" fill="var(--navy-vivid)" opacity=".8"/>
-      <circle cx="154" cy="40" r="10" fill="var(--navy-vivid)" opacity=".65"/>
-      <circle cx="214" cy="40" r="8" fill="var(--navy-vivid)" opacity=".5"/>
-      <circle cx="274" cy="40" r="6" fill="var(--navy-vivid)" opacity=".35"/>
+      <circle cx="34" cy="40" r="14" fill="var(--teal-vivid)"/>
+      <circle cx="94" cy="40" r="12" fill="var(--teal-vivid)" opacity=".8"/>
+      <circle cx="154" cy="40" r="10" fill="var(--teal-vivid)" opacity=".65"/>
+      <circle cx="214" cy="40" r="8" fill="var(--teal-vivid)" opacity=".5"/>
+      <circle cx="274" cy="40" r="6" fill="var(--teal-vivid)" opacity=".35"/>
       <line x1="24" y1="40" x2="300" y2="40" stroke="var(--line2)" stroke-width="1" stroke-dasharray="2,4"/>
-      <rect x="94" y="90" width="60" height="16" rx="8" fill="var(--gold-vivid)"/>
+      <rect x="94" y="90" width="60" height="16" rx="8" fill="var(--coral-vivid)"/>
       <text x="124" y="102" text-anchor="middle" font-size="13" fill="var(--card)">抜け止め</text>
-      <line x1="94" y1="60" x2="120" y2="88" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <line x1="154" y1="60" x2="128" y2="88" stroke="var(--gold-vivid)" stroke-width="1.5"/>
+      <line x1="94" y1="60" x2="120" y2="88" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <line x1="154" y1="60" x2="128" y2="88" stroke="var(--coral-vivid)" stroke-width="1.5"/>
       <text x="24" y="140" font-size="13" fill="var(--ink3)">①</text>
       <text x="284" y="140" font-size="13" fill="var(--ink3)">⑤</text>
       <line x1="24" y1="152" x2="300" y2="152" stroke="var(--line2)" stroke-width="1.5"/>
@@ -240,9 +241,9 @@ svg text{font-family:var(--sans)}
       <title id="fig6-title">暗地の上の横帯グラフ。帯の大半を強調色で塗り、プロフを見てから決める人の割合を示す図</title>
       <text x="24" y="30" font-size="13" fill="var(--card)" opacity=".85">プロフを見てから決める人</text>
       <rect x="24" y="46" width="282" height="38" rx="8" fill="rgba(255,255,255,.12)"/>
-      <rect x="24" y="46" width="238" height="38" rx="8" fill="var(--gold-bright)"/>
-      <text x="24" y="112" text-anchor="start" font-size="13" fill="var(--gold-bright)">多くの人が、</text>
-      <text x="24" y="130" text-anchor="start" font-size="13" fill="var(--gold-bright)">この帯の中で決めている</text>
+      <rect x="24" y="46" width="238" height="38" rx="8" fill="var(--coral-bright)"/>
+      <text x="24" y="112" text-anchor="start" font-size="13" fill="var(--coral-bright)">多くの人が、</text>
+      <text x="24" y="130" text-anchor="start" font-size="13" fill="var(--coral-bright)">この帯の中で決めている</text>
     </svg>
     <figcaption>多くの人が、<wbr>プロフを<wbr>見て決める。</figcaption>
   </figure>
@@ -252,9 +253,9 @@ svg text{font-family:var(--sans)}
       <title id="fig7-title">プロフィールという門で2手に分かれる図。強いプロフからフォローへ、弱いプロフから離脱へ。フォロー側の矢印だけ強調色</title>
       <rect x="132" y="10" width="66" height="40" rx="8" fill="rgba(255,255,255,.1)" stroke="var(--card)" stroke-opacity=".4" stroke-width="1.5"/>
       <text x="165" y="35" text-anchor="middle" font-size="13" fill="var(--card)">プロフ</text>
-      <path d="M150,50 C120,80 90,96 60,110" fill="none" stroke="var(--gold-bright)" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M66,98 L56,112 L72,116 Z" fill="var(--gold-bright)"/>
-      <text x="30" y="140" font-size="13" fill="var(--gold-bright)">フォロー</text>
+      <path d="M150,50 C120,80 90,96 60,110" fill="none" stroke="var(--coral-bright)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M66,98 L56,112 L72,116 Z" fill="var(--coral-bright)"/>
+      <text x="30" y="140" font-size="13" fill="var(--coral-bright)">フォロー</text>
       <path d="M180,50 C210,80 240,96 270,110" fill="none" stroke="var(--card)" stroke-opacity=".4" stroke-width="2"/>
       <path d="M264,98 L274,112 L258,116 Z" fill="var(--card)" fill-opacity=".4"/>
       <text x="248" y="140" font-size="13" fill="var(--card)" opacity=".7">離脱</text>
@@ -282,8 +283,8 @@ svg text{font-family:var(--sans)}
       <text x="40" y="142" font-size="13" fill="var(--ink3)">何を発信するか</text>
       <line x1="165" y1="158" x2="165" y2="172" stroke="var(--ink3)" stroke-width="2" stroke-linecap="round"/>
       <path d="M158,164 L165,176 L172,164 Z" fill="var(--ink3)"/>
-      <rect x="24" y="178" width="282" height="64" rx="8" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="2"/>
-      <text x="40" y="205" font-size="13" font-weight="600" fill="var(--gold-text)">どうなれる</text>
+      <rect x="24" y="178" width="282" height="64" rx="8" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="2"/>
+      <text x="40" y="205" font-size="13" font-weight="600" fill="var(--coral-text)">どうなれる</text>
       <text x="40" y="226" font-size="13" fill="var(--ink3)">見ると、どう変わるか</text>
       <line x1="165" y1="242" x2="165" y2="256" stroke="var(--ink3)" stroke-width="2" stroke-linecap="round"/>
       <path d="M158,248 L165,260 L172,248 Z" fill="var(--ink3)"/>
@@ -301,12 +302,12 @@ svg text{font-family:var(--sans)}
       <line x1="32" y1="66" x2="130" y2="66" stroke="var(--line)" stroke-width="1.5"/>
       <line x1="32" y1="86" x2="110" y2="86" stroke="var(--line)" stroke-width="1.5"/>
       <text x="86" y="160" text-anchor="middle" font-size="13" fill="var(--ink3)">ぼんやり</text>
-      <rect x="180" y="16" width="130" height="158" rx="10" fill="var(--card)" stroke="var(--gold-vivid)" stroke-width="2"/>
+      <rect x="180" y="16" width="130" height="158" rx="10" fill="var(--card)" stroke="var(--coral-vivid)" stroke-width="2"/>
       <text x="192" y="42" font-size="13" fill="var(--ink)">誰に：初心者へ</text>
       <text x="192" y="64" font-size="13" fill="var(--ink)">何を：時短のコツ</text>
       <text x="192" y="86" font-size="13" fill="var(--ink)">どうなれる：</text>
-      <text x="192" y="104" font-size="13" font-weight="600" fill="var(--gold-text)">迷わず作れる</text>
-      <text x="246" y="160" text-anchor="middle" font-size="13" fill="var(--gold-text)">はっきり</text>
+      <text x="192" y="104" font-size="13" font-weight="600" fill="var(--coral-text)">迷わず作れる</text>
+      <text x="246" y="160" text-anchor="middle" font-size="13" fill="var(--coral-text)">はっきり</text>
     </svg>
     <figcaption>ぼんやりより、<wbr>はっきり。</figcaption>
   </figure>
@@ -335,9 +336,9 @@ svg text{font-family:var(--sans)}
       <path d="M38,105 L28,112 L36,119 Z" fill="var(--ink3)"/>
       <circle cx="250" cy="96" r="40" fill="none" stroke="var(--line2)" stroke-width="1.5"/>
       <circle cx="250" cy="96" r="24" fill="none" stroke="var(--line2)" stroke-width="1.5"/>
-      <circle cx="250" cy="96" r="9" fill="var(--gold-vivid)"/>
-      <line x1="298" y1="58" x2="262" y2="86" stroke="var(--gold-vivid)" stroke-width="3" stroke-linecap="round"/>
-      <path d="M256,74 L266,88 L250,92 Z" fill="var(--gold-vivid)"/>
+      <circle cx="250" cy="96" r="9" fill="var(--coral-vivid)"/>
+      <line x1="298" y1="58" x2="262" y2="86" stroke="var(--coral-vivid)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M256,74 L266,88 L250,92 Z" fill="var(--coral-vivid)"/>
     </svg>
     <figcaption>選択肢は、<wbr>減らす。</figcaption>
   </figure>
@@ -349,8 +350,8 @@ svg text{font-family:var(--sans)}
       <text x="50" y="106" text-anchor="middle" font-size="13" fill="var(--ink3)">今</text>
       <line x1="66" y1="72" x2="250" y2="42" stroke="var(--ink3)" stroke-width="2" stroke-linecap="round"/>
       <path d="M240,36 L253,41 L242,49 Z" fill="var(--ink3)"/>
-      <circle cx="270" cy="38" r="20" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="2"/>
-      <text x="270" y="43" text-anchor="middle" font-size="13" font-weight="600" fill="var(--gold-text)">未来</text>
+      <circle cx="270" cy="38" r="20" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="2"/>
+      <text x="270" y="43" text-anchor="middle" font-size="13" font-weight="600" fill="var(--coral-text)">未来</text>
     </svg>
     <figcaption>フォロー後の<wbr>未来を、<wbr>見せる。</figcaption>
   </figure>
@@ -367,10 +368,10 @@ svg text{font-family:var(--sans)}
       <title id="fig12-title">縦長の画面フレームの下から10秒あたりに案内テロップが出る位置を示す図。位置マークが強調色</title>
       <rect x="105" y="14" width="120" height="164" rx="16" fill="none" stroke="var(--line2)" stroke-width="2"/>
       <line x1="105" y1="140" x2="225" y2="140" stroke="var(--line)" stroke-width="1"/>
-      <rect x="118" y="148" width="94" height="24" rx="6" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <text x="165" y="164" text-anchor="middle" font-size="13" fill="var(--gold-text)">くわしくはプロフ</text>
-      <path d="M226,150 L246,150" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round"/>
-      <text x="252" y="154" font-size="13" fill="var(--gold-text)">10秒</text>
+      <rect x="118" y="148" width="94" height="24" rx="6" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <text x="165" y="164" text-anchor="middle" font-size="13" fill="var(--coral-text)">くわしくはプロフ</text>
+      <path d="M226,150 L246,150" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round"/>
+      <text x="252" y="154" font-size="13" fill="var(--coral-text)">10秒</text>
     </svg>
     <figcaption>終わり際に、<wbr>ひと言。</figcaption>
   </figure>
@@ -380,7 +381,7 @@ svg text{font-family:var(--sans)}
       <title id="fig13-title">スピーカーと文字の札が、同じプロフへを指す図。強調色のラベルでプロフへと示されている</title>
       <path d="M60,45 A20,20 0 0 1 60,75" fill="none" stroke="var(--ink3)" stroke-width="2"/>
       <path d="M50,35 A34,34 0 0 1 50,85" fill="none" stroke="var(--ink3)" stroke-width="1.5" opacity=".6"/>
-      <circle cx="50" cy="60" r="4" fill="var(--navy-vivid)"/>
+      <circle cx="50" cy="60" r="4" fill="var(--teal-vivid)"/>
       <text x="50" y="112" text-anchor="middle" font-size="13" fill="var(--ink2)">声</text>
       <rect x="220" y="35" width="70" height="50" rx="8" fill="var(--card)" stroke="var(--line2)" stroke-width="1.5"/>
       <rect x="232" y="50" width="46" height="6" rx="3" fill="var(--line2)"/>
@@ -388,8 +389,8 @@ svg text{font-family:var(--sans)}
       <text x="255" y="112" text-anchor="middle" font-size="13" fill="var(--ink2)">文字</text>
       <line x1="60" y1="126" x2="140" y2="146" stroke="var(--ink3)" stroke-width="1.5"/>
       <line x1="250" y1="126" x2="180" y2="146" stroke="var(--ink3)" stroke-width="1.5"/>
-      <rect x="122" y="146" width="86" height="26" rx="8" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <text x="165" y="163" text-anchor="middle" font-size="13" font-weight="600" fill="var(--gold-text)">プロフへ</text>
+      <rect x="122" y="146" width="86" height="26" rx="8" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <text x="165" y="163" text-anchor="middle" font-size="13" font-weight="600" fill="var(--coral-text)">プロフへ</text>
     </svg>
     <figcaption>声と文字で、<wbr>案内する。</figcaption>
   </figure>
@@ -406,11 +407,11 @@ svg text{font-family:var(--sans)}
       <title id="fig14-title">プロフの一番上に固定の看板が2枚並ぶ図。代表作と自己紹介の2枚で、縁は強調色</title>
       <rect x="100" y="10" width="130" height="34" rx="17" fill="var(--card)" stroke="var(--line2)" stroke-width="1.5"/>
       <text x="165" y="32" text-anchor="middle" font-size="13" fill="var(--ink)">プロフ</text>
-      <rect x="30" y="66" width="130" height="70" rx="8" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="2"/>
-      <text x="46" y="94" font-size="13" font-weight="600" fill="var(--gold-text)">固定①</text>
+      <rect x="30" y="66" width="130" height="70" rx="8" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="2"/>
+      <text x="46" y="94" font-size="13" font-weight="600" fill="var(--coral-text)">固定①</text>
       <text x="46" y="116" font-size="13" fill="var(--ink2)">代表作</text>
-      <rect x="170" y="66" width="130" height="70" rx="8" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="2"/>
-      <text x="186" y="94" font-size="13" font-weight="600" fill="var(--gold-text)">固定②</text>
+      <rect x="170" y="66" width="130" height="70" rx="8" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="2"/>
+      <text x="186" y="94" font-size="13" font-weight="600" fill="var(--coral-text)">固定②</text>
       <text x="186" y="116" font-size="13" fill="var(--ink2)">自己紹介</text>
       <line x1="95" y1="44" x2="95" y2="64" stroke="var(--line2)" stroke-width="1.5"/>
       <line x1="235" y1="44" x2="235" y2="64" stroke="var(--line2)" stroke-width="1.5"/>
@@ -435,11 +436,11 @@ svg text{font-family:var(--sans)}
       <text x="50" y="65" text-anchor="middle" font-size="13" fill="var(--ink3)">1回目</text>
       <circle cx="165" cy="60" r="20" fill="var(--card)" stroke="var(--line2)" stroke-width="1.5"/>
       <text x="165" y="65" text-anchor="middle" font-size="13" fill="var(--ink3)">2回目</text>
-      <circle cx="280" cy="60" r="22" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="2.5"/>
-      <text x="280" y="55" text-anchor="middle" font-size="13" font-weight="600" fill="var(--gold-text)">3回目</text>
-      <line x1="280" y1="82" x2="280" y2="110" stroke="var(--gold-vivid)" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M272,102 L280,114 L288,102 Z" fill="var(--gold-vivid)"/>
-      <text x="280" y="132" text-anchor="middle" font-size="13" fill="var(--gold-text)">フォロー</text>
+      <circle cx="280" cy="60" r="22" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="2.5"/>
+      <text x="280" y="55" text-anchor="middle" font-size="13" font-weight="600" fill="var(--coral-text)">3回目</text>
+      <line x1="280" y1="82" x2="280" y2="110" stroke="var(--coral-vivid)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M272,102 L280,114 L288,102 Z" fill="var(--coral-vivid)"/>
+      <text x="280" y="132" text-anchor="middle" font-size="13" fill="var(--coral-text)">フォロー</text>
       <line x1="72" y1="60" x2="142" y2="60" stroke="var(--ink3)" stroke-width="1.5" stroke-dasharray="3,3"/>
       <line x1="188" y1="60" x2="256" y2="60" stroke="var(--ink3)" stroke-width="1.5" stroke-dasharray="3,3"/>
     </svg>
@@ -449,13 +450,13 @@ svg text{font-family:var(--sans)}
   <figure>
     <svg viewBox="0 0 330 130" role="img" aria-labelledby="fig16-title">
       <title id="fig16-title">週のリズムを示す帯の図。上段は投稿が等間隔に並ぶこまめな帯、下段はかたまって並ぶまとめ出しの帯。等間隔側だけ強調色</title>
-      <text x="24" y="24" font-size="13" fill="var(--gold-text)">こまめに</text>
-      <circle cx="50" cy="46" r="7" fill="var(--gold-vivid)"/>
-      <circle cx="100" cy="46" r="7" fill="var(--gold-vivid)"/>
-      <circle cx="150" cy="46" r="7" fill="var(--gold-vivid)"/>
-      <circle cx="200" cy="46" r="7" fill="var(--gold-vivid)"/>
-      <circle cx="250" cy="46" r="7" fill="var(--gold-vivid)"/>
-      <circle cx="300" cy="46" r="7" fill="var(--gold-vivid)"/>
+      <text x="24" y="24" font-size="13" fill="var(--coral-text)">こまめに</text>
+      <circle cx="50" cy="46" r="7" fill="var(--coral-vivid)"/>
+      <circle cx="100" cy="46" r="7" fill="var(--coral-vivid)"/>
+      <circle cx="150" cy="46" r="7" fill="var(--coral-vivid)"/>
+      <circle cx="200" cy="46" r="7" fill="var(--coral-vivid)"/>
+      <circle cx="250" cy="46" r="7" fill="var(--coral-vivid)"/>
+      <circle cx="300" cy="46" r="7" fill="var(--coral-vivid)"/>
       <text x="24" y="92" font-size="13" fill="var(--ink3)">まとめて</text>
       <circle cx="240" cy="112" r="7" fill="var(--line2)"/>
       <circle cx="258" cy="112" r="7" fill="var(--line2)"/>
@@ -477,11 +478,11 @@ svg text{font-family:var(--sans)}
       <title id="fig17-title">2分岐の図。プロフ訪問は多いのにフォロー少ないならプロフを直す、プロフ訪問が少ないなら動画を直すの2本の矢印。分岐点は強調色</title>
       <text x="24" y="34" font-size="13" fill="var(--ink)">訪問は多いのに</text>
       <text x="24" y="52" font-size="13" fill="var(--ink)">フォロー少ない</text>
-      <circle cx="135" cy="40" r="5" fill="var(--gold-vivid)"/>
-      <line x1="145" y1="40" x2="196" y2="40" stroke="var(--gold-vivid)" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M188,34 L200,40 L188,46 Z" fill="var(--gold-vivid)"/>
-      <rect x="204" y="16" width="100" height="48" rx="8" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <text x="254" y="45" text-anchor="middle" font-size="13" font-weight="600" fill="var(--gold-text)">プロフを直す</text>
+      <circle cx="135" cy="40" r="5" fill="var(--coral-vivid)"/>
+      <line x1="145" y1="40" x2="196" y2="40" stroke="var(--coral-vivid)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M188,34 L200,40 L188,46 Z" fill="var(--coral-vivid)"/>
+      <rect x="204" y="16" width="100" height="48" rx="8" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <text x="254" y="45" text-anchor="middle" font-size="13" font-weight="600" fill="var(--coral-text)">プロフを直す</text>
       <text x="24" y="104" font-size="13" fill="var(--ink)">そもそも訪問が</text>
       <text x="24" y="122" font-size="13" fill="var(--ink)">少ない</text>
       <circle cx="135" cy="110" r="5" fill="var(--ink3)"/>
@@ -504,9 +505,9 @@ svg text{font-family:var(--sans)}
   <figure class="prompt-figure">
     <svg viewBox="0 0 330 34" role="img" aria-labelledby="fig18-title">
       <title id="fig18-title">コピペ用のプロンプトの型枠を示す装飾的な角の飾り線の図</title>
-      <path d="M20,26 V12 H34" fill="none" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M310,26 V12 H296" fill="none" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round"/>
-      <text x="165" y="21" text-anchor="middle" font-size="13" font-weight="600" fill="var(--gold-text)">コピペ用プロンプト</text>
+      <path d="M20,26 V12 H34" fill="none" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M310,26 V12 H296" fill="none" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round"/>
+      <text x="165" y="21" text-anchor="middle" font-size="13" font-weight="600" fill="var(--coral-text)">コピペ用プロンプト</text>
     </svg>
     <div class="prompt-frame">
       <p class="prompt-label">この文をそのまま貼ります</p>
@@ -550,11 +551,11 @@ svg text{font-family:var(--sans)}
       <rect x="24" y="16" width="150" height="46" rx="12" fill="var(--card)" stroke="var(--line2)" stroke-width="1.5"/>
       <text x="40" y="44" font-size="13" fill="var(--ink)">コメント</text>
       <path d="M40,62 L30,74 L52,62 Z" fill="var(--card)" stroke="var(--line2)" stroke-width="1.5"/>
-      <rect x="156" y="88" width="150" height="46" rx="12" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="2"/>
-      <text x="172" y="116" font-size="13" fill="var(--gold-text)">返信</text>
-      <path d="M290,134 L300,146 L278,134 Z" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="2"/>
-      <path d="M120,64 C150,80 150,80 160,90" fill="none" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M150,80 L162,90 L148,92 Z" fill="var(--gold-vivid)"/>
+      <rect x="156" y="88" width="150" height="46" rx="12" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="2"/>
+      <text x="172" y="116" font-size="13" fill="var(--coral-text)">返信</text>
+      <path d="M290,134 L300,146 L278,134 Z" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="2"/>
+      <path d="M120,64 C150,80 150,80 160,90" fill="none" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M150,80 L162,90 L148,92 Z" fill="var(--coral-vivid)"/>
     </svg>
     <figcaption>返すほど、<wbr>近くなる。</figcaption>
   </figure>
@@ -562,24 +563,24 @@ svg text{font-family:var(--sans)}
   <figure>
     <svg viewBox="0 0 330 260" role="img" aria-labelledby="fig20-title">
       <title id="fig20-title">投稿前チェックの5項目の図。動画にプロフへの案内があるか、プロフに4つの要素が書けているか、お願いは1つに絞れているか、固定に看板を置けているか、コメントに返せているかの5行。各行にチェック枠と強調色のチェック線</title>
-      <rect x="24" y="10" width="22" height="22" rx="5" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <path d="M29,21 L35,27 L42,15" fill="none" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="24" y="10" width="22" height="22" rx="5" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <path d="M29,21 L35,27 L42,15" fill="none" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <text x="56" y="26" font-size="13" fill="var(--ink)">動画に、プロフへの</text>
       <text x="56" y="42" font-size="13" fill="var(--ink)">案内があるか。</text>
-      <rect x="24" y="58" width="22" height="22" rx="5" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <path d="M29,69 L35,75 L42,63" fill="none" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="24" y="58" width="22" height="22" rx="5" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <path d="M29,69 L35,75 L42,63" fill="none" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <text x="56" y="74" font-size="13" fill="var(--ink)">プロフに、4つの</text>
       <text x="56" y="90" font-size="13" fill="var(--ink)">要素が書けているか。</text>
-      <rect x="24" y="106" width="22" height="22" rx="5" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <path d="M29,117 L35,123 L42,111" fill="none" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="24" y="106" width="22" height="22" rx="5" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <path d="M29,117 L35,123 L42,111" fill="none" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <text x="56" y="122" font-size="13" fill="var(--ink)">お願いは、1つに</text>
       <text x="56" y="138" font-size="13" fill="var(--ink)">絞れているか。</text>
-      <rect x="24" y="154" width="22" height="22" rx="5" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <path d="M29,165 L35,171 L42,159" fill="none" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="24" y="154" width="22" height="22" rx="5" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <path d="M29,165 L35,171 L42,159" fill="none" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <text x="56" y="170" font-size="13" fill="var(--ink)">固定に、看板を</text>
       <text x="56" y="186" font-size="13" fill="var(--ink)">置けているか。</text>
-      <rect x="24" y="202" width="22" height="22" rx="5" fill="var(--gold-soft)" stroke="var(--gold-vivid)" stroke-width="1.5"/>
-      <path d="M29,213 L35,219 L42,207" fill="none" stroke="var(--gold-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="24" y="202" width="22" height="22" rx="5" fill="var(--coral-soft)" stroke="var(--coral-vivid)" stroke-width="1.5"/>
+      <path d="M29,213 L35,219 L42,207" fill="none" stroke="var(--coral-vivid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <text x="56" y="218" font-size="13" fill="var(--ink)">コメントに、</text>
       <text x="56" y="234" font-size="13" fill="var(--ink)">返せているか。</text>
     </svg>
@@ -599,16 +600,16 @@ svg text{font-family:var(--sans)}
       <title id="fig21-title">暗地の上に、入口からプロフ・固定・フォローを通って人まで1本の線が完成し、最後の人が光っている図</title>
       <rect x="16" y="52" width="52" height="88" rx="10" fill="none" stroke="var(--card)" stroke-opacity=".3" stroke-width="2"/>
       <text x="42" y="160" text-anchor="middle" font-size="13" fill="var(--card)" opacity=".75">入口</text>
-      <path d="M68,96 L128,78 L176,112 L224,80 L262,96" fill="none" stroke="var(--gold-bright)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="128" cy="78" r="4" fill="var(--gold-bright)"/>
-      <text x="128" y="64" text-anchor="middle" font-size="13" fill="var(--gold-bright)">プロフ</text>
-      <circle cx="176" cy="112" r="4" fill="var(--gold-bright)"/>
-      <text x="176" y="132" text-anchor="middle" font-size="13" fill="var(--gold-bright)">固定</text>
-      <circle cx="224" cy="80" r="4" fill="var(--gold-bright)"/>
-      <text x="224" y="64" text-anchor="middle" font-size="13" fill="var(--gold-bright)">フォロー</text>
-      <circle cx="290" cy="96" r="24" fill="var(--gold-bright)"/>
-      <circle cx="290" cy="96" r="32" fill="none" stroke="var(--gold-bright)" stroke-opacity=".4" stroke-width="6"/>
-      <text x="290" y="180" text-anchor="middle" font-size="13" fill="var(--gold-bright)">ファン</text>
+      <path d="M68,96 L128,78 L176,112 L224,80 L262,96" fill="none" stroke="var(--coral-bright)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1,9"/>
+      <circle cx="128" cy="78" r="4" fill="var(--coral-bright)"/>
+      <text x="128" y="64" text-anchor="middle" font-size="13" fill="var(--coral-bright)">プロフ</text>
+      <circle cx="176" cy="112" r="4" fill="var(--coral-bright)"/>
+      <text x="176" y="132" text-anchor="middle" font-size="13" fill="var(--coral-bright)">固定</text>
+      <circle cx="224" cy="80" r="4" fill="var(--coral-bright)"/>
+      <text x="224" y="64" text-anchor="middle" font-size="13" fill="var(--coral-bright)">フォロー</text>
+      <circle cx="290" cy="96" r="24" fill="var(--coral-bright)"/>
+      <circle cx="290" cy="96" r="32" fill="none" stroke="var(--coral-bright)" stroke-opacity=".4" stroke-width="6"/>
+      <text x="290" y="180" text-anchor="middle" font-size="13" fill="var(--coral-bright)">ファン</text>
     </svg>
     <figcaption>道ができると、<wbr>ファンが<wbr>残る。</figcaption>
   </figure>
@@ -618,11 +619,11 @@ svg text{font-family:var(--sans)}
   <figure>
     <svg viewBox="0 0 330 190" role="img" aria-labelledby="fig22-title">
       <title id="fig22-title">人を表す丸が少しずつ増えて輪になっていく図。輪の縁は強調色で光っている</title>
-      <circle cx="165" cy="96" r="60" fill="none" stroke="var(--gold-bright)" stroke-width="2.5" stroke-opacity=".7"/>
-      <circle cx="165" cy="36" r="9" fill="var(--gold-bright)"/>
-      <circle cx="207" cy="54" r="9" fill="var(--gold-bright)"/>
-      <circle cx="225" cy="96" r="9" fill="var(--gold-bright)" opacity=".85"/>
-      <circle cx="207" cy="138" r="9" fill="var(--gold-bright)" opacity=".7"/>
+      <circle cx="165" cy="96" r="60" fill="none" stroke="var(--coral-bright)" stroke-width="2.5" stroke-opacity=".7"/>
+      <circle cx="165" cy="36" r="9" fill="var(--coral-bright)"/>
+      <circle cx="207" cy="54" r="9" fill="var(--coral-bright)"/>
+      <circle cx="225" cy="96" r="9" fill="var(--coral-bright)" opacity=".85"/>
+      <circle cx="207" cy="138" r="9" fill="var(--coral-bright)" opacity=".7"/>
       <circle cx="165" cy="156" r="9" fill="var(--card)" opacity=".3"/>
       <circle cx="123" cy="138" r="9" fill="var(--card)" opacity=".25"/>
       <circle cx="105" cy="96" r="9" fill="var(--card)" opacity=".2"/>
